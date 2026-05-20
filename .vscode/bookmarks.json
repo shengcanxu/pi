@@ -1,0 +1,84 @@
+{
+	"files": [
+		{
+			"path": "packages/ai/src/api-registry.ts",
+			"bookmarks": [
+				{
+					"line": 69,
+					"column": 0,
+					"label": "注册大模型"
+				}
+			]
+		},
+		{
+			"path": "packages/coding-agent/src/core/agent-session.ts",
+			"bookmarks": [
+				{
+					"line": 963,
+					"column": 0,
+					"label": "向LLM发送prompt"
+				},
+				{
+					"line": 1611,
+					"column": 0,
+					"label": "运行compact 压缩context"
+				},
+				{
+					"line": 2541,
+					"column": 0,
+					"label": "运行bash "
+				}
+			]
+		},
+		{
+			"path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+			"bookmarks": [
+				{
+					"line": 2467,
+					"column": 0,
+					"label": "处理 commands"
+				}
+			]
+		},
+		{
+			"path": "packages/coding-agent/src/core/extensions/runner.ts",
+			"bookmarks": [
+				{
+					"line": 274,
+					"column": 0,
+					"label": "extension 绑定"
+				}
+			]
+		},
+		{
+			"path": "packages/coding-agent/src/core/resource-loader.ts",
+			"bookmarks": [
+				{
+					"line": 283,
+					"column": 0,
+					"label": "加载所有的resource， 包含extention， skill等 "
+				}
+			]
+		},
+		{
+			"path": "packages/coding-agent/src/core/package-manager.ts",
+			"bookmarks": [
+				{
+					"line": 1625,
+					"column": 0,
+					"label": "自动发现extention， skill等插件。 调用链路：main() → DefaultResourceLoader → reload() → DefaultPackageManager.resolve() → addAutoDiscoveredResources() → collectAutoExtensionEntries()"
+				}
+			]
+		},
+		{
+			"path": "packages/coding-agent/src/core/skills.ts",
+			"bookmarks": [
+				{
+					"line": 296,
+					"column": 0,
+					"label": "将skill加入到system prompt中去"
+				}
+			]
+		}
+	]
+}

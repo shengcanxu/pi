@@ -13,7 +13,8 @@ packages/*/dist-firefox/
 .env
 
 # Editor files
-.vscode/
+.vscode/settings.json
+.vscode/launch.json
 .zed/
 .idea/
 .claude/
