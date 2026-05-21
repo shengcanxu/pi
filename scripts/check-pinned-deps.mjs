@@ -44,6 +44,9 @@ collectPackageJsonFiles(".");
 for (const file of packageJsonFiles.sort()) {
 	const packageJson = JSON.parse(readFileSync(file, "utf8"));
 
+	//不检查extensions文件夹
+	if (file.startsWith("extensions/")) continue; 
+
 	for (const section of dependencySections) {
 		const dependencies = packageJson[section];
 		if (!dependencies) continue;

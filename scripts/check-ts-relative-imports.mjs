@@ -38,6 +38,9 @@ for (const file of files.sort()) {
 	const sourceText = readFileSync(file, "utf8");
 	const sourceFile = ts.createSourceFile(file, sourceText, ts.ScriptTarget.Latest, true);
 
+	//不检查extensions文件夹
+	if (file.startsWith("extensions/")) continue; 
+
 	function checkSpecifier(node) {
 		if (!isRelativeJavaScriptSpecifier(node.text)) return;
 		const { line, character } = sourceFile.getLineAndCharacterOfPosition(node.getStart(sourceFile));
