@@ -1,0 +1,253 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "urllib.request",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib.request",
+        "description": "urllib.request",
+        "detail": "urllib.request",
+        "documentation": {}
+    },
+    {
+        "label": "os.path",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.path",
+        "description": "os.path",
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "namedtuple",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Calculator",
+        "kind": 6,
+        "importPath": "extensions.pi-ast-grep.test.fixtures.sg-project.sample",
+        "description": "extensions.pi-ast-grep.test.fixtures.sg-project.sample",
+        "peekOfCode": "class Calculator:\n    pass",
+        "detail": "extensions.pi-ast-grep.test.fixtures.sg-project.sample",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "extensions.pi-ast-grep.test.fixtures.sg-project.sample",
+        "description": "extensions.pi-ast-grep.test.fixtures.sg-project.sample",
+        "peekOfCode": "def add(a, b):\n    return a + b\ndef multiply(x, y):\n    return x * y\nclass Calculator:\n    pass",
+        "detail": "extensions.pi-ast-grep.test.fixtures.sg-project.sample",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "kind": 2,
+        "importPath": "extensions.pi-ast-grep.test.fixtures.sg-project.sample",
+        "description": "extensions.pi-ast-grep.test.fixtures.sg-project.sample",
+        "peekOfCode": "def multiply(x, y):\n    return x * y\nclass Calculator:\n    pass",
+        "detail": "extensions.pi-ast-grep.test.fixtures.sg-project.sample",
+        "documentation": {}
+    },
+    {
+        "label": "write_crc32_table",
+        "kind": 2,
+        "importPath": "node_modules.koffi.lib.native.base.crc_gen",
+        "description": "node_modules.koffi.lib.native.base.crc_gen",
+        "peekOfCode": "def write_crc32_table(f, name, poly):\n    f.write(f'static const uint32_t {name}[256] = {{')\n    for i in range(0, 256):\n        value = i\n        for j in range(0, 8):\n            value = (value >> 1) ^ (poly if value & 1 else 0)\n        if i % 6 == 0:\n            f.write('\\n   ')\n        f.write(f' 0x{value:08X}u,')\n    f.write('\\n};\\n\\n')",
+        "detail": "node_modules.koffi.lib.native.base.crc_gen",
+        "documentation": {}
+    },
+    {
+        "label": "write_crc64_tables",
+        "kind": 2,
+        "importPath": "node_modules.koffi.lib.native.base.crc_gen",
+        "description": "node_modules.koffi.lib.native.base.crc_gen",
+        "peekOfCode": "def write_crc64_tables(f, name, poly):\n    for table in range(0, 16):\n        count = table * 8 + 8\n        f.write(f'static const uint64_t {name}{table}[256] = {{')\n        for i in range(0, 256):\n            value = i\n            for j in range(0, count):\n                value = (value >> 1) ^ (poly if value & 1 else 0)\n            if i % 4 == 0:\n                f.write('\\n   ')",
+        "detail": "node_modules.koffi.lib.native.base.crc_gen",
+        "documentation": {}
+    },
+    {
+        "label": "CRC32_POLY",
+        "kind": 5,
+        "importPath": "node_modules.koffi.lib.native.base.crc_gen",
+        "description": "node_modules.koffi.lib.native.base.crc_gen",
+        "peekOfCode": "CRC32_POLY = 0xEDB88320\nCRC32C_POLY = 0x82F63B78\nCRC64_XZ_POLY = 0xC96C5795D7870F42\nCRC64_NVME_POLY = 0x9A6C9329AC4BC9B5\nLICENSE_HEADER = \"\"\"// SPDX-License-Identifier: MIT\n// SPDX-FileCopyrightText: 2025 Niels Martignène <niels.martignene@protonmail.com>\"\"\"\ndef write_crc32_table(f, name, poly):\n    f.write(f'static const uint32_t {name}[256] = {{')\n    for i in range(0, 256):\n        value = i",
+        "detail": "node_modules.koffi.lib.native.base.crc_gen",
+        "documentation": {}
+    },
+    {
+        "label": "CRC32C_POLY",
+        "kind": 5,
+        "importPath": "node_modules.koffi.lib.native.base.crc_gen",
+        "description": "node_modules.koffi.lib.native.base.crc_gen",
+        "peekOfCode": "CRC32C_POLY = 0x82F63B78\nCRC64_XZ_POLY = 0xC96C5795D7870F42\nCRC64_NVME_POLY = 0x9A6C9329AC4BC9B5\nLICENSE_HEADER = \"\"\"// SPDX-License-Identifier: MIT\n// SPDX-FileCopyrightText: 2025 Niels Martignène <niels.martignene@protonmail.com>\"\"\"\ndef write_crc32_table(f, name, poly):\n    f.write(f'static const uint32_t {name}[256] = {{')\n    for i in range(0, 256):\n        value = i\n        for j in range(0, 8):",
+        "detail": "node_modules.koffi.lib.native.base.crc_gen",
+        "documentation": {}
+    },
+    {
+        "label": "CRC64_XZ_POLY",
+        "kind": 5,
+        "importPath": "node_modules.koffi.lib.native.base.crc_gen",
+        "description": "node_modules.koffi.lib.native.base.crc_gen",
+        "peekOfCode": "CRC64_XZ_POLY = 0xC96C5795D7870F42\nCRC64_NVME_POLY = 0x9A6C9329AC4BC9B5\nLICENSE_HEADER = \"\"\"// SPDX-License-Identifier: MIT\n// SPDX-FileCopyrightText: 2025 Niels Martignène <niels.martignene@protonmail.com>\"\"\"\ndef write_crc32_table(f, name, poly):\n    f.write(f'static const uint32_t {name}[256] = {{')\n    for i in range(0, 256):\n        value = i\n        for j in range(0, 8):\n            value = (value >> 1) ^ (poly if value & 1 else 0)",
+        "detail": "node_modules.koffi.lib.native.base.crc_gen",
+        "documentation": {}
+    },
+    {
+        "label": "CRC64_NVME_POLY",
+        "kind": 5,
+        "importPath": "node_modules.koffi.lib.native.base.crc_gen",
+        "description": "node_modules.koffi.lib.native.base.crc_gen",
+        "peekOfCode": "CRC64_NVME_POLY = 0x9A6C9329AC4BC9B5\nLICENSE_HEADER = \"\"\"// SPDX-License-Identifier: MIT\n// SPDX-FileCopyrightText: 2025 Niels Martignène <niels.martignene@protonmail.com>\"\"\"\ndef write_crc32_table(f, name, poly):\n    f.write(f'static const uint32_t {name}[256] = {{')\n    for i in range(0, 256):\n        value = i\n        for j in range(0, 8):\n            value = (value >> 1) ^ (poly if value & 1 else 0)\n        if i % 6 == 0:",
+        "detail": "node_modules.koffi.lib.native.base.crc_gen",
+        "documentation": {}
+    },
+    {
+        "label": "LICENSE_HEADER",
+        "kind": 5,
+        "importPath": "node_modules.koffi.lib.native.base.crc_gen",
+        "description": "node_modules.koffi.lib.native.base.crc_gen",
+        "peekOfCode": "LICENSE_HEADER = \"\"\"// SPDX-License-Identifier: MIT\n// SPDX-FileCopyrightText: 2025 Niels Martignène <niels.martignene@protonmail.com>\"\"\"\ndef write_crc32_table(f, name, poly):\n    f.write(f'static const uint32_t {name}[256] = {{')\n    for i in range(0, 256):\n        value = i\n        for j in range(0, 8):\n            value = (value >> 1) ^ (poly if value & 1 else 0)\n        if i % 6 == 0:\n            f.write('\\n   ')",
+        "detail": "node_modules.koffi.lib.native.base.crc_gen",
+        "documentation": {}
+    },
+    {
+        "label": "parse_version",
+        "kind": 2,
+        "importPath": "node_modules.koffi.lib.native.base.unicode_gen",
+        "description": "node_modules.koffi.lib.native.base.unicode_gen",
+        "peekOfCode": "def parse_version(core):\n    lines = iter(core.splitlines())\n    version = next(lines).strip(\"\\n\\r \\t#\") + ' -- ' + next(lines).strip(\"\\n\\r \\t#\")\n    return version\ndef parse_properties_wcwidth(core, asian):\n    null = []\n    wide = []\n    for (chars, parts, comments) in parse_properties(core):\n        if comments[0] in ['Me', 'Mn', 'Mc', 'Cf', 'Zl', 'Zp']:\n            null.extend(chars)",
+        "detail": "node_modules.koffi.lib.native.base.unicode_gen",
+        "documentation": {}
+    },
+    {
+        "label": "parse_properties_wcwidth",
+        "kind": 2,
+        "importPath": "node_modules.koffi.lib.native.base.unicode_gen",
+        "description": "node_modules.koffi.lib.native.base.unicode_gen",
+        "peekOfCode": "def parse_properties_wcwidth(core, asian):\n    null = []\n    wide = []\n    for (chars, parts, comments) in parse_properties(core):\n        if comments[0] in ['Me', 'Mn', 'Mc', 'Cf', 'Zl', 'Zp']:\n            null.extend(chars)\n    for (chars, parts, comments) in parse_properties(asian):\n        if parts[1] in ['F', 'W'] and not comments[0] in ['Mn', 'Mc']:\n            wide.extend(chars)\n    return WcWidthResult(null = compress(null),",
+        "detail": "node_modules.koffi.lib.native.base.unicode_gen",
+        "documentation": {}
+    },
+    {
+        "label": "parse_properties_xid",
+        "kind": 2,
+        "importPath": "node_modules.koffi.lib.native.base.unicode_gen",
+        "description": "node_modules.koffi.lib.native.base.unicode_gen",
+        "peekOfCode": "def parse_properties_xid(core):\n    id_start = []\n    id_continue = []\n    for (chars, parts, comments) in parse_properties(core):\n        if parts[1] == 'ID_Start':\n            id_start.extend(chars)\n        elif parts[1] == 'ID_Continue':\n            id_continue.extend(chars)\n    return XidResult(id_start = compress(id_start),\n                     id_continue = compress(id_continue))",
+        "detail": "node_modules.koffi.lib.native.base.unicode_gen",
+        "documentation": {}
+    },
+    {
+        "label": "parse_properties",
+        "kind": 2,
+        "importPath": "node_modules.koffi.lib.native.base.unicode_gen",
+        "description": "node_modules.koffi.lib.native.base.unicode_gen",
+        "peekOfCode": "def parse_properties(text):\n    for line in text.splitlines():\n        line = line.strip()\n        if not line or line[0] == '#':\n            continue\n        parts = [part.strip() for part in re.split('[;#]', line)]\n        if len(parts) < 3:\n            continue\n        comments = parts[2].split(' ')\n        if '..' in parts[0]:",
+        "detail": "node_modules.koffi.lib.native.base.unicode_gen",
+        "documentation": {}
+    },
+    {
+        "label": "compress",
+        "kind": 2,
+        "importPath": "node_modules.koffi.lib.native.base.unicode_gen",
+        "description": "node_modules.koffi.lib.native.base.unicode_gen",
+        "peekOfCode": "def compress(chars):\n    ranges = []\n    if chars:\n        chars = sorted(set(chars))\n        iterator = iter(chars)\n        prev = next(iterator)\n        start = prev\n        for c in iterator:\n            if c != prev + 1:\n                ranges.append((start, prev + 1))",
+        "detail": "node_modules.koffi.lib.native.base.unicode_gen",
+        "documentation": {}
+    },
+    {
+        "label": "write_header",
+        "kind": 2,
+        "importPath": "node_modules.koffi.lib.native.base.unicode_gen",
+        "description": "node_modules.koffi.lib.native.base.unicode_gen",
+        "peekOfCode": "def write_header(version, wcwidth, xid, f):\n    f.write(f\"\"\"{LICENSE_HEADER}\n// This file is autogenerated by unicode_gen.py\n// Version: {version}\nnamespace K {{\nstatic const int32_t WcWidthNull[] = {{\"\"\")\n    for i, v in enumerate(wcwidth.null):\n        if i % 5 == 0: f.write('\\n   ')\n        f.write(f' 0x{v[0]:05X}, 0x{v[1]:05X}{\",\" if i + 1 < len(wcwidth.null) else \"\"}')\n    f.write(\"\"\"",
+        "detail": "node_modules.koffi.lib.native.base.unicode_gen",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_URL",
+        "kind": 5,
+        "importPath": "node_modules.koffi.lib.native.base.unicode_gen",
+        "description": "node_modules.koffi.lib.native.base.unicode_gen",
+        "peekOfCode": "DEFAULT_URL = 'https://unicode.org/Public/16.0.0'\nLICENSE_HEADER = \"\"\"// SPDX-License-Identifier: MIT\n// SPDX-FileCopyrightText: 2025 Niels Martignène <niels.martignene@protonmail.com>\"\"\"\nWcWidthResult = namedtuple('WcWidthResult', ['null', 'wide'])\nXidResult = namedtuple('XidResult', ['id_start', 'id_continue'])\ndef parse_version(core):\n    lines = iter(core.splitlines())\n    version = next(lines).strip(\"\\n\\r \\t#\") + ' -- ' + next(lines).strip(\"\\n\\r \\t#\")\n    return version\ndef parse_properties_wcwidth(core, asian):",
+        "detail": "node_modules.koffi.lib.native.base.unicode_gen",
+        "documentation": {}
+    },
+    {
+        "label": "LICENSE_HEADER",
+        "kind": 5,
+        "importPath": "node_modules.koffi.lib.native.base.unicode_gen",
+        "description": "node_modules.koffi.lib.native.base.unicode_gen",
+        "peekOfCode": "LICENSE_HEADER = \"\"\"// SPDX-License-Identifier: MIT\n// SPDX-FileCopyrightText: 2025 Niels Martignène <niels.martignene@protonmail.com>\"\"\"\nWcWidthResult = namedtuple('WcWidthResult', ['null', 'wide'])\nXidResult = namedtuple('XidResult', ['id_start', 'id_continue'])\ndef parse_version(core):\n    lines = iter(core.splitlines())\n    version = next(lines).strip(\"\\n\\r \\t#\") + ' -- ' + next(lines).strip(\"\\n\\r \\t#\")\n    return version\ndef parse_properties_wcwidth(core, asian):\n    null = []",
+        "detail": "node_modules.koffi.lib.native.base.unicode_gen",
+        "documentation": {}
+    },
+    {
+        "label": "WcWidthResult",
+        "kind": 5,
+        "importPath": "node_modules.koffi.lib.native.base.unicode_gen",
+        "description": "node_modules.koffi.lib.native.base.unicode_gen",
+        "peekOfCode": "WcWidthResult = namedtuple('WcWidthResult', ['null', 'wide'])\nXidResult = namedtuple('XidResult', ['id_start', 'id_continue'])\ndef parse_version(core):\n    lines = iter(core.splitlines())\n    version = next(lines).strip(\"\\n\\r \\t#\") + ' -- ' + next(lines).strip(\"\\n\\r \\t#\")\n    return version\ndef parse_properties_wcwidth(core, asian):\n    null = []\n    wide = []\n    for (chars, parts, comments) in parse_properties(core):",
+        "detail": "node_modules.koffi.lib.native.base.unicode_gen",
+        "documentation": {}
+    },
+    {
+        "label": "XidResult",
+        "kind": 5,
+        "importPath": "node_modules.koffi.lib.native.base.unicode_gen",
+        "description": "node_modules.koffi.lib.native.base.unicode_gen",
+        "peekOfCode": "XidResult = namedtuple('XidResult', ['id_start', 'id_continue'])\ndef parse_version(core):\n    lines = iter(core.splitlines())\n    version = next(lines).strip(\"\\n\\r \\t#\") + ' -- ' + next(lines).strip(\"\\n\\r \\t#\")\n    return version\ndef parse_properties_wcwidth(core, asian):\n    null = []\n    wide = []\n    for (chars, parts, comments) in parse_properties(core):\n        if comments[0] in ['Me', 'Mn', 'Mc', 'Cf', 'Zl', 'Zp']:",
+        "detail": "node_modules.koffi.lib.native.base.unicode_gen",
+        "documentation": {}
+    }
+]
