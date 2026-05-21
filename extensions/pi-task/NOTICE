@@ -1,0 +1,6 @@
+pi-task
+
+Task subagent extension for the pi coding agent.
+
+This package follows the public extension API of @mariozechner/pi-coding-agent
+and is inspired by task/subagent behavior in OpenCode, OMO, and Free Code.

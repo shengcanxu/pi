@@ -1,0 +1,76 @@
+{
+	"name": "pi-task",
+	"version": "0.1.4",
+	"description": "Task subagent extension for the pi coding agent with background lifecycle visibility, resume, process supervision, and final-result retrieval.",
+	"type": "module",
+	"license": "MIT",
+	"homepage": "https://github.com/code-yeongyu/pi-task",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/code-yeongyu/pi-task.git"
+	},
+	"bugs": {
+		"url": "https://github.com/code-yeongyu/pi-task/issues"
+	},
+	"keywords": [
+		"pi",
+		"pi-mono",
+		"pi-coding-agent",
+		"senpi",
+		"pi-extension",
+		"task",
+		"subagent",
+		"background-agents",
+		"typescript"
+	],
+	"pi": {
+		"extensions": [
+			"./src/index.ts"
+		]
+	},
+	"files": [
+		"src",
+		"scripts",
+		"docs",
+		"LICENSE",
+		"NOTICE",
+		"README.md",
+		"CHANGELOG.md"
+	],
+	"scripts": {
+		"test": "vitest --run",
+		"test:watch": "vitest",
+		"typecheck": "tsgo --noEmit",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"check": "tsgo --noEmit && biome check .",
+		"qa:import": "node scripts/qa-import.mjs",
+		"qa:status-scope": "node scripts/qa-status-scope.mjs",
+		"qa:child-tools": "node scripts/qa-child-tools.mjs",
+		"qa:process-kill": "node scripts/qa-process-kill.mjs",
+		"qa:senpi-install": "node scripts/qa-senpi-install.mjs --dry-run"
+	},
+	"peerDependencies": {
+		"@mariozechner/pi-ai": "*",
+		"@mariozechner/pi-coding-agent": "*",
+		"@mariozechner/pi-tui": "*",
+		"typebox": "*"
+	},
+	"dependencies": {
+		"yaml": "^2.8.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.15",
+		"@types/node": "^25.7.0",
+		"@typescript/native-preview": "^7.0.0-dev.20260512.1",
+		"jiti": "^2.7.0",
+		"typescript": "^6.0.3",
+		"vitest": "^4.1.5"
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
