@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+
+# Sisyphus working files at project root only (not test fixtures)
+/.sisyphus/
+
+# Allow test fixture .git markers and .sisyphus rules
+!test/fixtures/**
+
