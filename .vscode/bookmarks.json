@@ -14,6 +14,11 @@
 			"path": "packages/coding-agent/src/core/agent-session.ts",
 			"bookmarks": [
 				{
+					"line": 878,
+					"column": 0,
+					"label": "构建system prompt， 设置tools，extension和skills都会重新构建system prompt"
+				},
+				{
 					"line": 963,
 					"column": 0,
 					"label": "向LLM发送prompt"
@@ -33,6 +38,11 @@
 		{
 			"path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
 			"bookmarks": [
+				{
+					"line": 780,
+					"column": 0,
+					"label": "主循环"
+				},
 				{
 					"line": 2467,
 					"column": 0,
@@ -77,6 +87,16 @@
 					"line": 296,
 					"column": 0,
 					"label": "将skill加入到system prompt中去"
+				}
+			]
+		},
+		{
+			"path": "packages/coding-agent/src/core/export-html/index.ts",
+			"bookmarks": [
+				{
+					"line": 241,
+					"column": 0,
+					"label": "将session输出为html便于查看"
 				}
 			]
 		}
