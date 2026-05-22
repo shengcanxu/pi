@@ -1251,6 +1251,17 @@
               html += `<div class="error-text">Error: ${escapeHtml(msg.errorMessage || 'Unknown error')}</div>`;
             }
 
+            //显示token使用量
+            if(entry.message.usage){
+              const usage = entry.message.usage;
+              html += `<div class="hook-message" style="text-align: right;">`;
+              html += `输入:<span style="color:red;">${formatTokens(usage.input)}</span> `;
+              html += `缓存:<span style="color:red;">${formatTokens(usage.cacheRead)}</span> `;
+              html += `缓存率:<span style="color:red;">${Math.round(usage.cacheRead / (usage.cacheRead + usage.input) * 1000)/10}%</span> `;
+              html += `输出:<span style="color:red;">${formatTokens(usage.output)}</span> `;
+              html += `总:<span style="color:red;">${formatTokens(usage.totalTokens)}</span></div>`;
+            }
+
             html += '</div>';
             return html;
           }
