@@ -82,7 +82,7 @@ export function registerTodoWriteTool(pi: ExtensionAPI, accessors: TodoAccessors
 		label: "TodoWrite",
 		description: DESCRIPTION,
 		promptSnippet:
-			"MANDATORY for ALL tasks. Follow EXPLORE -> DEFINE -> PLAN -> TODO -> EXECUTE workflow. No exceptions.",
+			"Create a todo list. MANDATORY for ALL tasks. Follow EXPLORE -> DEFINE -> PLAN -> TODO -> EXECUTE workflow. No exceptions.",
 		promptGuidelines: [
 			"Create todos for EVERY task. No 'trivial task' exemptions. Follow EXPLORE -> DEFINE -> PLAN -> TODO -> EXECUTE workflow always.",
 			"Each todo title MUST encode WHERE, WHY, HOW, and EXPECTED RESULT. Format: '[WHERE] [HOW] to [WHY] - expect [RESULT]'. Vague todos are useless.",

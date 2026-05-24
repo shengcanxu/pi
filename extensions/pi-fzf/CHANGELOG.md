@@ -1,0 +1,89 @@
+# Changelog
+
+## [Unreleased]
+
+## [0.9.0] - 2026-04-24
+
+### Added
+
+- Optional `multiSelect` command mode with fzf-style `Tab` / `Shift+Tab` toggling and newline-joined `{{selected}}` output on accept (thanks [@DerekStride](https://github.com/DerekStride)!)
+
+### Fixed
+
+- Preview pane now rerenders immediately when async preview content finishes loading instead of waiting for the next keypress (thanks [@DerekStride](https://github.com/DerekStride)!)
+
+## [0.8.1] - 2026-04-23
+
+### Fixed
+
+- Restore selector keybinding hints and navigation on newer pi releases after the shared keybindings API migration
+
+## [0.8.0] - 2026-03-13
+
+### Added
+
+- New per-command `hideHeader` option to hide the selector title line (`fzf:<name>`) in all placements (`overlay`, `aboveEditor`, `belowEditor`)
+
+### Fixed
+
+- Keep overlay selector top position stable while filtering to prevent input from jumping
+
+## [0.7.0] - 2026-03-12
+
+### Added
+
+- Support three selector placements: `overlay`, `aboveEditor`, and `belowEditor`
+- Restore `overlay` as the default placement for backwards compatibility
+- Add placement tests for default resolution and explicit `overlay`
+
+### Changed
+
+- Render selector via floating overlay when placement is `overlay`
+- Render selector as editor widget for `aboveEditor`/`belowEditor`
+- In widget mode, remove side borders and hide the border touching the editor seam
+- Document placement behavior and defaults in README
+
+## [0.5.0] - 2026-02-07
+
+### Changed
+
+- Use `pasteToEditor` instead of `setEditorText` for editor actions, inserting text at cursor position rather than replacing editor contents (requires pi >= 0.52.8)
+
+### Added
+
+- GitHub Release with changelog notes created automatically on tag push
+
+## [0.4.0] - 2026-02-07
+
+### Added
+
+- Support `selectPageUp` / `selectPageDown` keybindings for faster list navigation
+
+### Fixed
+
+- Truncate long candidates to prevent overflow past the box border
+- Reuse `Fzf` instance instead of recreating it on every keystroke
+- Use `ExtensionCommandContext` directly, removing unnecessary type cast
+
+## [0.3.0] - 2026-02-07
+
+### Changed
+
+- Use pi editor keybindings (`selectUp`, `selectDown`, `selectConfirm`, `selectCancel`) for selector navigation instead of hardcoded keys
+
+## [0.2.0] - 2026-02-06
+
+### Added
+
+- Keyboard shortcut support for fzf commands
+- Space-separated search terms (extended match)
+- `output` option for bash actions (`editor`, `send`, or `notify`)
+- Demo video/GIF in README
+- CI publish workflow with npm provenance
+- Vitest tests for config module
+- Lefthook pre-commit hooks (format + test)
+- Git-diff example configuration
+
+### Fixed
+
+- Add repository URL for npm provenance verification
